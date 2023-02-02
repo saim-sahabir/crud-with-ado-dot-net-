@@ -37,4 +37,21 @@ xhr.onload = function(e) {
 };
 xhr.send();
 
+//
+
+
+
+$.ajax({
+  type: "GET",
+  url: "path/to/wordfile.docx",
+  dataType: "binary",
+  success: function (data) {
+    var a = document.createElement("a");
+    var url = window.URL.createObjectURL(data);
+    a.href = url;
+    a.download = "wordfile.docx";
+    a.click();
+    window.URL.revokeObjectURL(url);
+  }
+});
 
