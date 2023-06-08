@@ -124,3 +124,4 @@ $(document).ready(function () {
         <button id="click">Disable Second Row</button>
 	</BODY>
 </HTML>
+https://www.jqwidgets.com/community/topic/how-to-disable-the-checkbox-when-a-row-is-greyed-out/
